@@ -71,4 +71,4 @@ Go to you browser and open:
 
 This example works, because in our docker-compse file the hostnames were set to these names!
 
-Have Fun :)
+## Have Fun :)
