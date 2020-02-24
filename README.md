@@ -31,7 +31,7 @@ Test you connection to the SSH-Server... Password is 'root'
 ssh root@localhost -p 3333
 ```
 ## **L**ocal Port-Forwarding
-We can use local port forwarding in order to forward a local port to a remote maschine via our SSH connection! In our example we would like to use the local port 8080 and forward it to port 80 of apache.local.
+We can use local port forwarding in order to forward a local port to a remote machine via our SSH connection! In our example we would like to use the local port 8080 and forward it to port 80 of apache.local.
 How does it work:
 
 ```Bash
@@ -40,9 +40,9 @@ ssh -L 8080:apache.local:80 root@localhost -p 3333
 Go to you browser and open: http://localhost:8080 ... you should see "It works" in your browser
 
 ## **R**everse Port-Forwarding
-Now you need an open port on your local maschine. Imagine, you have a Keycloak running on your local machine: http://localhost:8090 And you want to access it from your SSH-Server...
+Imagine, you have a Keycloak running on your local machine: http://localhost:8090 And you want to access it from your SSH-Server...
 
-We can use reverse port forwarding in order to forward a remote port to our local maschine via our SSH connection! In our example we would like to use the remote port 8090 and forward it to port 8080 of our machine, where the Keycloack is running
+We can use reverse port forwarding in order to forward a remote port to our local machine via our SSH connection! In our example we would like to use the remote port 8080 and forward it to port 8090 of our machine, where the Keycloack is running
 How does it work:
 
 ```Bash
@@ -71,4 +71,4 @@ Go to you browser and open:
 
 This example works, because in our docker-compse file the hostnames were set to these names!
 
-Have Fun and play around!
+Have Fun :)
